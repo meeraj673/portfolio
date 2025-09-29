@@ -10,7 +10,7 @@ class PortfolioApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Karthik Yadav Portfolio",
+      title: "Meeraj Portfolio",
       theme: ThemeData(primarySwatch: Colors.blue),
       home: const PortfolioHome(),
       debugShowCheckedModeBanner: false,
@@ -25,7 +25,7 @@ class PortfolioHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Karthik Yadav"),
+        title: const Text("Meeraj"),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -36,14 +36,13 @@ class PortfolioHome extends StatelessWidget {
             // 👇 Profile Photo
             const CircleAvatar(
               radius: 60,
-              backgroundImage: AssetImage("assets/img.jpg"), 
-              
+              backgroundImage: AssetImage("assets/image.png"), 
             ),
             const SizedBox(height: 20),
 
             sectionTitle("📌 Professional Summary"),
             const Text(
-              "Motivated web developer with hands-on experience in web development, C, Python, and basic Java. Proficient in data structures and eager to apply problem-solving skills in real world projects. Seeking an internship opportunity to further develop technical expertise and contribute to team success.",
+              "Enthusiastic and detail-oriented developer with experience in web development, C, Python, and Microsoft Excel. Skilled in creating intuitive user interfaces and solutions. Currently focused on developing real-world applications that enhance productivity and user experience. Looking for opportunities to contribute to impactful projects and grow technical expertise.",
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 20),
@@ -53,8 +52,6 @@ class PortfolioHome extends StatelessWidget {
               "Web Development (HTML, CSS, JavaScript)",
               "C Programming",
               "Python",
-              "Basic Java",
-              "AutoCAD",
               "Microsoft Excel"
             ]),
             const SizedBox(height: 20),
@@ -64,6 +61,8 @@ class PortfolioHome extends StatelessWidget {
                 "A simple grocery list UI where users can add, remove, and mark items as bought using JavaScript (local storage for persistence)."),
             projectTile("Study Planner UI",
                 "A frontend planner where users can add, edit, and remove study tasks with a clean, calendar-like layout."),
+            projectTile("Mammas Monitor",
+                "A user interface connecting doctors and pregnant patients, enabling appointment management, health tracking, and easy communication."),
             const SizedBox(height: 20),
 
             sectionTitle("📜 Certificates"),
@@ -85,7 +84,7 @@ class PortfolioHome extends StatelessWidget {
 
             sectionTitle("📞 Contact"),
             const Text(
-              "📧 bandakarthikyadav89@gmail.com\n📱 +91 95052 25728",
+              "📧 Sanjaymogli673@gamil.com\n📱 +91 99081 74127",
               style: TextStyle(fontSize: 16),
             ),
           ],
